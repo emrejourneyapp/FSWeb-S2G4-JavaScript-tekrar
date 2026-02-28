@@ -139,6 +139,13 @@ console.log("üçe tam bölünenler: ", ucetambolunenler);
 
 // 3c çözümü:
 
+ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi)=>{
+  const result = toplam + sayi ;
+  //console.log(result);
+  return result;
+}, 0);
+
+console.log("üçe tam bölünenlerin toplamı:", ucebolunenlerintoplami);
 /* kodlar buraya */
 
 // 3d çözümü
