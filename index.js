@@ -125,7 +125,15 @@ console.log("En Büyük sayı:", enbuyuk);
 
 // 3b çözümü:
 
+ucetambolunenler = [];
 
+sayilar.forEach((sayi)=>{
+  if(sayi % 3 == 0) {
+    ucetambolunenler.push(sayi);
+  }
+})
+
+console.log("üçe tam bölünenler: ", ucetambolunenler);
 
 /* kodlar buraya */
 
