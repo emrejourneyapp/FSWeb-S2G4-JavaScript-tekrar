@@ -140,16 +140,25 @@ console.log("üçe tam bölünenler: ", ucetambolunenler);
 // 3c çözümü:
 
 ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi)=>{
-  const result = toplam + sayi ;
+  toplam += sayi ;
   //console.log(result);
-  return result;
+  return toplam;
 }, 0);
 
 console.log("üçe tam bölünenlerin toplamı:", ucebolunenlerintoplami);
 /* kodlar buraya */
 
 // 3d çözümü
-
+besyuzdenkucuksayilar = sayilar.filter((sayi)=>{
+  /*
+  if (sayi < 500) {
+    return true;
+  }
+  return false; 
+  */
+  //return sayi < 500 ? true : false;
+  return sayi < 500;
+})
 /* kodlar buraya */
 
 // 3e çözümü
