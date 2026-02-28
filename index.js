@@ -68,8 +68,9 @@ function CemberinCevresi(r) {
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinAlani(r, pi) {
+  const alan = pi * r * r;
+  return alan;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
@@ -102,10 +103,29 @@ let ucetambolunenler,
   tekraredensayilar;
 
 // 3a çözümü
+enkucuk = sayilar[0];
+enbuyuk = sayilar[0];
+
+for (let i=0; i < sayilar.length; i++) {
+  const sayi = sayilar[i];
+  if(sayi < enkucuk) {
+    enkucuk = sayi
+  }
+
+  if(sayi > enbuyuk) {
+    enbuyuk = sayi
+  }
+}
+
+console.log("En küçük sayı:", enkucuk);
+console.log("En Büyük sayı:", enbuyuk);
 
 /* kodlar buraya */
 
+
 // 3b çözümü:
+
+
 
 /* kodlar buraya */
 
